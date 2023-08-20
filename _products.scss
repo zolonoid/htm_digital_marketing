@@ -1,0 +1,159 @@
+@import 'stylelib';
+
+@mixin product-box($page) {
+    width: 100%;
+    max-width: 1140px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 736px;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 359px;
+    }
+
+    @if $page==index {
+        &__info {
+            width: 100%;
+            margin-bottom: 48px;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                margin-bottom: 72px;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 64px;
+            }
+        }
+
+        &__heading {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            color: #222222;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            margin-top: 6px;
+            color: #9F9F9F;
+        }
+
+        &__all {
+            width: 100%;
+            padding-top: 18px;
+            padding-bottom: 96px;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                padding-top: 17px;
+                padding-bottom: 65px;
+            }
+
+            @media screen and (max-width: 767px) {
+                padding-top: 25px;
+                padding-bottom: 96px;
+            }
+        }
+
+        &__all-button {
+            padding: 15px 39px;
+            border: 1px solid #FF6A6A;
+            color: #F26376;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                color: #FFF;
+                background-color: #F16D7F;
+            }
+        }
+    }
+
+    @else if $page==product {
+        padding-top: 665px;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@mixin product {
+    width: 31.5789%;
+    margin-bottom: 30px;
+    position: relative;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 48.913%;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    &:hover &__img {
+        filter: brightness(0.5);
+    }
+
+    &:hover &__add {
+        display: flex;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__add {
+        @include add-to-cart(#FFF, #F16D7F);
+    }
+
+    &__content {
+        background: #F8F8F8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 24px 16px;
+        gap: 16px;
+    }
+
+    &__heading {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    }
+
+    &__price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
+}

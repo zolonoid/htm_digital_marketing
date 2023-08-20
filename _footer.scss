@@ -1,0 +1,208 @@
+@mixin subscribe-bg {
+    width: 100%;
+    background-image: url(img/layer.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin subscribe {
+    width: 100%;
+    max-width: 1140px;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 557px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 343px;
+        padding-top: 64px;
+        padding-bottom: 110px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        width: 31.5789%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 64.4524%;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 59px;
+        }
+    }
+
+    &__info-img {
+        width: 26.6667%;
+    }
+
+    &__info-text {
+        color: #222224;
+        text-align: center;
+        font-family: Lato;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+
+        span {
+            font-style: italic;
+        }
+    }
+
+    &__form {
+        width: 48.8596%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+            gap: 27px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 99.4169%;
+            gap: 22px;
+        }
+    }
+
+    &__title {
+        color: #222224;
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 167.2%;
+        /* 40.128px */
+    }
+
+    &__subtitle {
+        color: #222224;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 167.2%;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+            line-height: 153.2%;
+        }
+    }
+
+    &__email {
+        width: 356px;
+        display: flex;
+    }
+
+    &__email-input {
+        width: 256px;
+        height: 49px;
+        color: #222224;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-image: url(img/input.svg);
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        padding-left: 22px;
+    }
+
+    &__email-button {
+        width: 100px;
+        height: 49px;
+        color: #FFF;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-image: url(img/button.svg);
+        background-color: rgba(0, 0, 0, 0);
+        background-size: cover;
+        border: none;
+    }
+}
+
+@mixin footer {
+    width: 100%;
+    max-width: 1140px;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 704px;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 251px;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    &__copyright {
+        color: #FBFBFB;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__social {
+        width: 148px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-icon {
+        background-color: #FFF;
+        width: 21.2838%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #F16D7F;
+        }
+
+        &:hover svg path {
+            fill: #FFF;
+        }
+    }
+}

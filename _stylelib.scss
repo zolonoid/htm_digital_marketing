@@ -1,0 +1,33 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin add-to-cart($color, $hover_color, $w: 139px, $h: 44px, $fs: 14px, $display: none, $abs: true) {
+    @if $abs==true {
+        position: absolute;
+        top: 188px;
+        left: 111px;
+    }
+    border: 1px solid $color;
+    width: $w;
+    height: $h;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fs;
+    line-height: 17px;
+    display: $display;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    color: $color;
+
+    &:hover {
+        box-shadow: 0 0 5px $color;
+    }
+
+    &:hover svg path {
+        fill: $hover_color;
+    }
+}
