@@ -1,3 +1,5 @@
+@import 'stylelib';
+
 @mixin subscribe-bg {
     width: 100%;
     background-image: url(img/layer.png);
@@ -151,6 +153,12 @@
         border: none;
     }
 }
+
+@mixin footer-bg {
+    width: 100%;
+    background: #222222;
+    @include flex-center;
+  }
 
 @mixin footer {
     width: 100%;

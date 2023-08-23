@@ -1,5 +1,6 @@
 @import 'common';
 @import 'header';
+@import 'breadcrumb';
 @import 'products';
 @import 'footer';
 @import 'stylelib';
@@ -17,42 +18,11 @@
 }
 
 .breadcrumb-bg {
-    width: 100%;
-    background: #F8F3F4;
-    display: flex;
-    justify-content: center
+    @include breadcrumb-bg;
 }
 
 .breadcrumb {
-    width: 100%;
-    max-width: 1129px;
-    padding: 60px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__title {
-        color: #F16D7F;
-        font-family: Lato;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &__links {
-        color: #636363;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-
-        &:last-child {
-            color: #F16D7F;
-            font-weight: 700;
-        }
-    }
+    @include breadcrumb;
 }
 
 .image-slide {
@@ -173,12 +143,8 @@
     }
 }
 
-.sale-bg {
-    width: 100%;
-    background: #FFF;
-    padding-bottom: 113px;
-    display: flex;
-    justify-content: center;
+.product-bg {
+    @include product-bg(113px);
   }
 
 .product-box {
@@ -189,8 +155,6 @@
     @include product;
 }
 
-
-
 .subscribe-bg {
     @include subscribe-bg;
 }
@@ -198,6 +162,10 @@
 .subscribe {
     @include subscribe;
 }
+
+.footer-bg {
+    @include footer-bg;
+  }
 
 .footer {
     @include footer;

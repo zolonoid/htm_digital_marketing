@@ -1,5 +1,13 @@
 @import 'stylelib';
 
+@mixin product-bg($pb: 0) {
+    width: 100%;
+    background: #FFF;
+    padding-bottom: $pb;
+    display: flex;
+    justify-content: center;
+  }
+
 @mixin product-box($page) {
     width: 100%;
     max-width: 1140px;
@@ -82,6 +90,10 @@
 
     @else if $page==product {
         padding-top: 665px;
+    }
+
+    @else if $page==catalog {
+        padding-top: 52px;
     }
 
     &__content {

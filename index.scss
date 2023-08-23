@@ -1,6 +1,7 @@
 @import 'common';
 @import 'header';
 @import 'products';
+@import 'advantages';
 @import 'footer';
 
 .header-bg {
@@ -214,6 +215,10 @@
   }
 }
 
+.product-bg {
+  @include product-bg;
+}
+
 .product-box {
   @include product-box(index);
 }
@@ -222,66 +227,12 @@
   @include product;
 }
 
+.advantages-bg {
+  @include advantages-bg;
+}
+
 .advantages {
-  width: 100%;
-  max-width: 1140px;
-  padding-top: 104px;
-  padding-bottom: 104px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    max-width: 360px;
-    padding-top: 48px;
-    padding-bottom: 16px;
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 348px;
-    padding-top: 48px;
-    padding-bottom: 34px;
-  }
-
-  &__item {
-    width: 31.5789%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      width: 100%;
-      margin-bottom: 48px;
-    }
-
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      margin-bottom: 47px;
-    }
-  }
-
-  &__img {
-    width: 47px;
-    height: 40px;
-  }
-
-  &__heading {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FBFBFB;
-  }
-
-  &__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FBFBFB;
-  }
+ @include advantages;
 }
 
 .subscribe-bg {
@@ -290,6 +241,10 @@
 
 .subscribe {
   @include subscribe;
+}
+
+.footer-bg {
+  @include footer-bg;
 }
 
 .footer {

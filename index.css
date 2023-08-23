@@ -336,6 +336,14 @@ a {
   color: #F16D7F;
 }
 
+.product-bg {
+  width: 100%;
+  background: #FFF;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .product-box {
   width: 100%;
   max-width: 1140px;
@@ -499,6 +507,14 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+
+.advantages-bg {
+  width: 100%;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages {
@@ -713,6 +729,14 @@ a {
   background-color: rgba(0, 0, 0, 0);
   background-size: cover;
   border: none;
+}
+
+.footer-bg {
+  width: 100%;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

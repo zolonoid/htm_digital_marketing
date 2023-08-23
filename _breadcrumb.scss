@@ -1,0 +1,38 @@
+@mixin breadcrumb-bg {
+    width: 100%;
+    background: #F8F3F4;
+    display: flex;
+    justify-content: center
+}
+
+@mixin breadcrumb {
+    width: 100%;
+    max-width: 1129px;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        color: #F16D7F;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__links {
+        color: #636363;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &:last-child {
+            color: #F16D7F;
+            font-weight: 700;
+        }
+    }
+}
