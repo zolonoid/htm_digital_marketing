@@ -54,12 +54,21 @@
     padding-bottom: 96px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 736px;
+        padding-top: 40px;
+    }
 }
 
 .reg-form {
     width: 31.579%;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 48.913%;
+    }
 
     &__user-data {
         display: flex;
@@ -159,6 +168,10 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 48.0978%;
+    }
+
     &__title {
         color: #000;
         font-family: Lato;
@@ -167,6 +180,11 @@
         font-weight: 300;
         line-height: normal;
         margin-bottom: 22px;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
     }
 
     &__text {
@@ -176,6 +194,10 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            font-size: 16px;
+        }
     }
 
     &__perks {

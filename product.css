@@ -150,6 +150,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .breadcrumb {
+    max-width: 736px;
+  }
+}
 .breadcrumb__title {
   color: #F16D7F;
   font-family: Lato;
@@ -180,9 +185,20 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-slide {
+    padding-top: 30px;
+    padding-bottom: 29px;
+  }
+}
 .image-slide__img {
   width: 597px;
   background-color: #F7F7F7;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-slide__img {
+    max-width: 466px;
+  }
 }
 .image-slide__prev, .image-slide__next {
   display: flex;
@@ -202,13 +218,27 @@ a {
   width: 100%;
   max-width: 1141px;
   padding: 65px 0px;
-  position: absolute;
-  top: 935px;
-  left: 50%;
-  transform: translate(-50%, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .product-desc {
+    position: absolute;
+    top: 935px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-desc {
+    max-width: 100%;
+    margin: 0 auto;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #EAEAEA;
+  }
 }
 .product-desc__title {
   color: #F16D7F;
@@ -235,7 +265,7 @@ a {
   margin-bottom: 48px;
 }
 .product-desc__text {
-  width: 48.6415%;
+  width: 554px;
   color: #5E5E5E;
   text-align: center;
   font-family: Lato;
@@ -255,7 +285,7 @@ a {
   margin-bottom: 65px;
 }
 .product-desc__line {
-  width: 56.2664%;
+  width: 641px;
   height: 1px;
   background-color: #EAEAEA;
   margin-bottom: 65px;
@@ -311,6 +341,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .product-box {
     max-width: 736px;
+    padding-top: 129px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -403,6 +434,11 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product:last-child {
+    display: none;
+  }
 }
 
 .subscribe-bg {

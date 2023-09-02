@@ -37,6 +37,12 @@ $colorSite: #F16D7F;
     padding-top: 39px;
     display: flex;
     gap: 30px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 736px;
+        padding-top: 11px;
+        justify-content: center;
+    }
 }
 
 .filter {
@@ -150,6 +156,12 @@ $colorSite: #F16D7F;
 
 .product {
     @include product;
+
+    &:nth-child(3) {
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
 }
 
 .pagination-wrapper {
@@ -158,6 +170,11 @@ $colorSite: #F16D7F;
     padding-bottom: 96px;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding-top: 25px;
+        padding-bottom: 63px;
+    }
 }
 
 .pagination {

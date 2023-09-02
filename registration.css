@@ -150,6 +150,11 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .breadcrumb {
+    max-width: 736px;
+  }
+}
 .breadcrumb__title {
   color: #F16D7F;
   font-family: Lato;
@@ -398,11 +403,22 @@ a {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .registration {
+    max-width: 736px;
+    padding-top: 40px;
+  }
+}
 
 .reg-form {
   width: 31.579%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .reg-form {
+    width: 48.913%;
+  }
 }
 .reg-form__user-data {
   display: flex;
@@ -495,6 +511,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .loyalty {
+    width: 48.0978%;
+  }
+}
 .loyalty__title {
   color: #000;
   font-family: Lato;
@@ -504,6 +525,12 @@ a {
   line-height: normal;
   margin-bottom: 22px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .loyalty__title {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
 .loyalty__text {
   color: #000;
   font-family: Lato;
@@ -511,6 +538,11 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .loyalty__text {
+    font-size: 16px;
+  }
 }
 .loyalty__perks {
   padding-top: 21px;

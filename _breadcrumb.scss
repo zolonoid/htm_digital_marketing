@@ -13,6 +13,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        max-width: 736px;
+    }
+
     &__title {
         color: #F16D7F;
         font-family: Lato;
