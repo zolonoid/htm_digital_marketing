@@ -1,12 +1,20 @@
 @import 'stylelib';
 
-@mixin product-bg($pb: 0) {
+@mixin product-bg($pb1: 0, $pb2: 0, $pb3: 0) {
     width: 100%;
     background: #FFF;
-    padding-bottom: $pb;
+    padding-bottom: $pb1;
     display: flex;
     justify-content: center;
-  }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding-bottom: $pb2;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: $pb3;
+    }
+}
 
 @mixin product-box($page) {
     width: 100%;
@@ -14,9 +22,11 @@
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         max-width: 736px;
+
         @if $page==product {
             padding-top: 129px;
         }
+
         @else if $page==catalog {
             padding-top: 25px;
         }
@@ -24,6 +34,14 @@
 
     @media screen and (max-width: 767px) {
         max-width: 359px;
+
+        @if $page==product {
+            padding-top: 64px;
+        }
+
+        @else if $page==catalog {
+            padding-top: 16px;
+        }
     }
 
     @if $page==index {

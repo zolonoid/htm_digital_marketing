@@ -5,7 +5,7 @@
     justify-content: center
 }
 
-@mixin breadcrumb {
+@mixin breadcrumb($mode: 0) {
     width: 100%;
     max-width: 1129px;
     padding: 60px 0px;
@@ -15,6 +15,21 @@
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         max-width: 736px;
+    }
+
+    @media screen and (max-width: 767px) {
+        max-width: 375px;
+        flex-direction: column;
+        justify-content: center;
+
+        @if $mode==0 {
+            gap: 32px;
+            padding: 24px 0px 46px 0px;
+        }
+
+        @else {
+            padding: 50px 0px 69px 0px;
+        }
     }
 
     &__title {

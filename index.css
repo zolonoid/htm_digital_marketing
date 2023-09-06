@@ -343,6 +343,16 @@ a {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-bg {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product-bg {
+    padding-bottom: 0;
+  }
+}
 
 .product-box {
   width: 100%;
